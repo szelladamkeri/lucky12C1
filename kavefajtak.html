@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Kávézó - Kávéfajták</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><i class="fa-solid fa-clover"></i> Lucky</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Kezdőlap</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="kavefajtak.html">Kávéfajták</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sutemenyek.html">Sütemények</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<div class="banner">
+    
+</div>
+
+
+</header>
+
+    <div class="container">
+        <div class="row text-center">
+            <h1 class="my-5">Lucky - Kávéfajták</h1>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
+            <div class="col" data-bs-toggle="modal" data-bs-target="#americanoModal">
+              <div class="card h-100">
+                <img src="./img/americano-min.jpg" class="card-img-top" alt="Americano">
+                <div class="card-body">
+                  <h5 class="card-title">Americano</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#latteMacchiatoModal">
+              <div class="card h-100">
+                <img src="./img/lattemacchiatto-min.jpg" class="card-img-top" alt="Latte macchiato">
+                <div class="card-body">
+                  <h5 class="card-title">Latte macchiato</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#feketeKaveModal">
+              <div class="card h-100">
+                <img src="./img/coffee-15994_1280-min.jpg" class="card-img-top" alt="Feketekávé">
+                <div class="card-body">
+                  <h5 class="card-title">Feketekávé</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#cappucinoModal">
+              <div class="card h-100">
+                <img src="./img/cappuccino2-min.jpg" class="card-img-top" alt="Cappucino">
+                <div class="card-body">
+                  <h5 class="card-title">Cappucino</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <footer>
+      <div class="row mt-5">
+        <div class="col-sm-6 col-lg-4 offset-lg-1">
+          <h3 class="pt-3">Elérhetőségek</h3>
+          <ul>
+            <li><i class="fa-solid fa-envelope mx-3"></i>6900 Makó, Posta utca 4-6.</li>
+            <li><i class="fa-solid fa-at mx-3"></i>lucky@gmail.com</li>
+            <li><i class="fa-solid fa-phone mx-3"></i>+36(30)111-5555</li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-4 offset-lg-1">
+          <h3 class="pt-3">Feliratkozás hírlevélre</h3>
+          <form action="">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="E-mail" aria-label="E-mail" aria-describedby="button-addon2">
+              <button class="btn btn-outline-success" type="button" id="button-addon2" onclick="feliratkozas()">Feliratkozás</button>
+            </div>
+          </form>
+          <p>&copy; Lucky Kávézó 2023</p>
+        </div>
+      </div>
+    </footer>
+<!-- Modal -->
+    <!-- Americano Modal -->
+    <div class="modal" tabindex="-1" id="americanoModal">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Americano</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img src="img/americano-min.jpg" alt="Americano" class="img-fluid">
+                </div>
+                <div class="col-sm-8">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam eligendi reiciendis dignissimos quaerat nemo, incidunt ipsum debitis excepturi aperiam, maiores nobis non placeat harum. Ipsum, vitae labore. Provident quaerat sapiente quis error est. Sapiente molestias autem facere ipsa, expedita recusandae repellendus sint cupiditate, perspiciatis beatae vitae natus laudantium quidem id. Nostrum, odio repellat? Omnis laudantium a iure officiis, quos fugit eveniet voluptate cum repudiandae obcaecati esse eaque sed natus dolorum harum similique distinctio perspiciatis recusandae nobis quisquam nesciunt consectetur, labore dignissimos. Labore ipsa alias saepe sed eveniet enim molestiae? Magnam sunt debitis enim? Nesciunt laborum explicabo soluta similique nemo incidunt laboriosam ullam dolore fugit adipisci quibusdam, aperiam corrupti quae officia voluptate modi non voluptatum quos. Eligendi dolorum dolorem, eveniet quas autem aperiam minima quia voluptates architecto, perspiciatis, ex omnis sequi excepturi minus modi fugit. Accusantium voluptas eligendi doloribus, illo quo quibusdam aliquam cumque beatae quidem corrupti. Numquam harum veniam possimus.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Bezárás</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Latte Macchiato Modal -->
+    <div class="modal" tabindex="-1" id="latteMacchiatoModal">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Latte Macchiato</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img src="img/lattemacchiatto-min.jpg" alt="Latte macchiato" class="img-fluid">
+                </div>
+                <div class="col-sm-8">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam eligendi reiciendis dignissimos quaerat nemo, incidunt ipsum debitis excepturi aperiam, maiores nobis non placeat harum. Ipsum, vitae labore. Provident quaerat sapiente quis error est. Sapiente molestias autem facere ipsa, expedita recusandae repellendus sint cupiditate, perspiciatis beatae vitae natus laudantium quidem id. Nostrum, odio repellat? Omnis laudantium a iure officiis, quos fugit eveniet voluptate cum repudiandae obcaecati esse eaque sed natus dolorum harum similique distinctio perspiciatis recusandae nobis quisquam nesciunt consectetur, labore dignissimos. Labore ipsa alias saepe sed eveniet enim molestiae? Magnam sunt debitis enim? Nesciunt laborum explicabo soluta similique nemo incidunt laboriosam ullam dolore fugit adipisci quibusdam, aperiam corrupti quae officia voluptate modi non voluptatum quos. Eligendi dolorum dolorem, eveniet quas autem aperiam minima quia voluptates architecto, perspiciatis, ex omnis sequi excepturi minus modi fugit. Accusantium voluptas eligendi doloribus, illo quo quibusdam aliquam cumque beatae quidem corrupti. Numquam harum veniam possimus.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Bezárás</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Latte Macchiato Modal -->
+    <div class="modal" tabindex="-1" id="feketeKaveModal">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Feketekávé</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img src="img/coffee-15994_1280-min.jpg" alt="Feketekávé" class="img-fluid">
+                </div>
+                <div class="col-sm-8">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam eligendi reiciendis dignissimos quaerat nemo, incidunt ipsum debitis excepturi aperiam, maiores nobis non placeat harum. Ipsum, vitae labore. Provident quaerat sapiente quis error est. Sapiente molestias autem facere ipsa, expedita recusandae repellendus sint cupiditate, perspiciatis beatae vitae natus laudantium quidem id. Nostrum, odio repellat? Omnis laudantium a iure officiis, quos fugit eveniet voluptate cum repudiandae obcaecati esse eaque sed natus dolorum harum similique distinctio perspiciatis recusandae nobis quisquam nesciunt consectetur, labore dignissimos. Labore ipsa alias saepe sed eveniet enim molestiae? Magnam sunt debitis enim? Nesciunt laborum explicabo soluta similique nemo incidunt laboriosam ullam dolore fugit adipisci quibusdam, aperiam corrupti quae officia voluptate modi non voluptatum quos. Eligendi dolorum dolorem, eveniet quas autem aperiam minima quia voluptates architecto, perspiciatis, ex omnis sequi excepturi minus modi fugit. Accusantium voluptas eligendi doloribus, illo quo quibusdam aliquam cumque beatae quidem corrupti. Numquam harum veniam possimus.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Bezárás</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Cappucino Modal -->
+    <div class="modal" tabindex="-1" id="cappucinoModal">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Cappucino</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img src="img/cappuccino2-min.jpg" alt="Cappucino" class="img-fluid">
+                </div>
+                <div class="col-sm-8">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam eligendi reiciendis dignissimos quaerat nemo, incidunt ipsum debitis excepturi aperiam, maiores nobis non placeat harum. Ipsum, vitae labore. Provident quaerat sapiente quis error est. Sapiente molestias autem facere ipsa, expedita recusandae repellendus sint cupiditate, perspiciatis beatae vitae natus laudantium quidem id. Nostrum, odio repellat? Omnis laudantium a iure officiis, quos fugit eveniet voluptate cum repudiandae obcaecati esse eaque sed natus dolorum harum similique distinctio perspiciatis recusandae nobis quisquam nesciunt consectetur, labore dignissimos. Labore ipsa alias saepe sed eveniet enim molestiae? Magnam sunt debitis enim? Nesciunt laborum explicabo soluta similique nemo incidunt laboriosam ullam dolore fugit adipisci quibusdam, aperiam corrupti quae officia voluptate modi non voluptatum quos. Eligendi dolorum dolorem, eveniet quas autem aperiam minima quia voluptates architecto, perspiciatis, ex omnis sequi excepturi minus modi fugit. Accusantium voluptas eligendi doloribus, illo quo quibusdam aliquam cumque beatae quidem corrupti. Numquam harum veniam possimus.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Bezárás</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+
+    <script>
+      function feliratkozas() {
+        let email = document.getElementById('email').value;
+        if (email == " ") {
+          alert("Kérem adja meg az e-mail címét!")
+        } else {
+          alert("Sikeresen feliratkozott ")
+        }
+      }
+    </script>
+
+</body>
+</html>
